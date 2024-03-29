@@ -134,14 +134,14 @@ x = (1:1:10);
 
     set(gca,'color','none', 'color','none','ycolor',[0.8 0.2 0.1],'xlim',[0 10]);
     set(gca,'color','none','ycolor',[0.8 0.2 0.1],'FontName','Arial','FontSize',36,'LineWidth',1.5,'FontWeight','bold');
-    xlabel('¦Â','FontName','Arial','FontSize',36,'LineWidth',1.5,'FontWeight','bold');
+    xlabel('Î²','FontName','Arial','FontSize',36,'LineWidth',1.5,'FontWeight','bold');
     set(gca,'XTicklabels',str1,'FontName','Arial','FontSize',34,'LineWidth',1.5,'FontWeight','bold');
-    ylabel('T_a(¡ãC)','FontName','Arial','FontSize',36,'LineWidth',1.5,'FontWeight','bold','color',[0.8 0.2 0.1]);
+    ylabel('T_a(Â°C)','FontName','Arial','FontSize',36,'LineWidth',1.5,'FontWeight','bold','color',[0.8 0.2 0.1]);
 
     hold on
     xlim1 = get(h1,'xlim');
     xticklen = get(h1,'ticklength');
-    pos1 = get(h1,'position'); % ½¨Á¢µÚ¶ş¸öÖá£¬ÒªÓëµÚÒ»¸öÖáÖØºÏ£¬²¢ÇÒÍ¸Ã÷£¬ÖáµÄ·¶Î§ÏàÍ¬   
+    pos1 = get(h1,'position'); % å»ºç«‹ç¬¬äºŒä¸ªè½´ï¼Œè¦ä¸ç¬¬ä¸€ä¸ªè½´é‡åˆï¼Œå¹¶ä¸”é€æ˜ï¼Œè½´çš„èŒƒå›´ç›¸åŒ   
     pos1(1)=pos1(1)-0.02;
     pos1(3) = pos1(3)*.86;
     set(h1,'position',pos1);
@@ -183,7 +183,7 @@ x = (1:1:10);
     end
 %     set(gca,'XTick',(0:1:10),'XTicklabels',str1,'FontName','Times New Roman','FontSize',16,'LineWidth',1.5,'FontWeight','bold');
 %     set(h3,'FontName','Times New Roman','FontSize',28,'LineWidth',1.5,'FontWeight','bold');
-    ylabel('ALAN (nW¡¤cm¡¤^-^2¡¤sr^-^1)','FontName','Arial','FontSize',36,'LineWidth',1.5,'FontWeight','bold');
+    ylabel('ALAN (nWÂ·cmÂ·^-^2Â·sr^-^1)','FontName','Arial','FontSize',36,'LineWidth',1.5,'FontWeight','bold');
 
     box off
 %  title('City Average','FontName', 'Times New Roman','FontSize',32,'FontWeight','bold');
@@ -198,7 +198,7 @@ x = (1:1:10);
      res(:,1) = predict(lm,tb);
      b = lm.Coefficients.Estimate;
      R = lm.ModelFitVsNullModel.Pvalue;
-     St = strcat(num2str(round(b(2),2)),'x^2+',num2str(round(b(3),2)),'x+',num2str(round(b(1),2))); %ÄâºÏµÄº¯Êı
+     St = strcat(num2str(round(b(2),2)),'x^2+',num2str(round(b(3),2)),'x+',num2str(round(b(1),2))); %æ‹Ÿåˆçš„å‡½æ•°
  end
  if num == 2
      X1 = log(X);
@@ -209,7 +209,7 @@ x = (1:1:10);
      b = lm.Coefficients.Estimate;
 %      res = exp(res);
      R = lm.ModelFitVsNullModel.Pvalue;
-     St = strcat(num2str(round(b(2),2)),'ln(x)+',num2str(round(b(1),4))); %ÄâºÏµÄº¯Êı
+     St = strcat(num2str(round(b(2),2)),'ln(x)+',num2str(round(b(1),4))); %æ‹Ÿåˆçš„å‡½æ•°
  end
 
  if num == 3
@@ -220,14 +220,14 @@ x = (1:1:10);
       b = lm.Coefficients.Estimate;
      res = exp(res)+X(1,1);
      R = lm.ModelFitVsNullModel.Pvalue;
-     St = strcat(num2str(round(exp(b(2)),2)),'e^x+',num2str(round(X(1,1),2))); %ÄâºÏµÄº¯Êı
+     St = strcat(num2str(round(exp(b(2)),2)),'e^x+',num2str(round(X(1,1),2))); %æ‹Ÿåˆçš„å‡½æ•°
  end
   if num == 4
      x = X;
      y = Y;
         fx=@(b,x)(b(1)./(1+b(2).*exp(-b(3).*x)));
-        b=[1 2 2]; %³õÊ¼µü´úÖµ ×î´óÖµ Éú³¤ËÙÂÊ £¨¸ù¾İ¾ßÌåÊµÑéÀ´Éè¶¨£¬³õÊ¼ÖµÔÚ±¾·½³ÌÄâºÏÓ°Ïì²»´ó£©
-        for l=1:30 %ÄâºÏ¹ı³Ìµü´ú
+        b=[1 2 2]; %åˆå§‹è¿­ä»£å€¼ æœ€å¤§å€¼ ç”Ÿé•¿é€Ÿç‡ ï¼ˆæ ¹æ®å…·ä½“å®éªŒæ¥è®¾å®šï¼Œåˆå§‹å€¼åœ¨æœ¬æ–¹ç¨‹æ‹Ÿåˆå½±å“ä¸å¤§ï¼‰
+        for l=1:30 %æ‹Ÿåˆè¿‡ç¨‹è¿­ä»£
             b=lsqcurvefit(fx,b,x,y);
             b=nlinfit(x,y,fx,b);
         end
@@ -237,7 +237,7 @@ x = (1:1:10);
         RSS=(y-y1)'*(y-y1);
         R=(SSy-RSS)/SSy;
         res(:,1)=fx(b,x);
-     St = strcat(num2str(round(b(1),2)),'/(1+',num2str(round(b(2),2)),'exp(-',num2str(round(b(3),2)),'*x))'); %ÄâºÏµÄº¯Êı
+     St = strcat(num2str(round(b(1),2)),'/(1+',num2str(round(b(2),2)),'exp(-',num2str(round(b(3),2)),'*x))'); %æ‹Ÿåˆçš„å‡½æ•°
  end
  FitA = res;
  end
