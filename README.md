@@ -1,6 +1,5 @@
-Raw data can retrieve from Google Earth Engine and the codes are opening source in https://code.earthengine.google.com/?accept_repo=users/lvvw66/ALAN_UHI_pheno. 
+Raw data can be retrieved from Google Earth Engine, and the associated scripts for data processing are available on the open-source GitHub repository: https://code.earthengine.google.com/?accept_repo=users/lvvw66/ALAN_UHI_pheno. 
 
-The data process scripts are based on Matlab 2022a platform. This codes inculdes the attritubition analysis and related figures in the manuscript.
+These scripts are designed for attribution analysis and visualization of figures presented in the manuscript titled "Artificial light at night outweighs temperature in lengthening urban growing seasons." 
 
-For more information can refer to Artificial light at night outweights temperature in lengthening urban growing seasons.
-
+The scripts are written in Matlab 2022a platform.
