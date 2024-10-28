@@ -22,11 +22,13 @@ The details about Matlab installation and Toolbox management is accessible at：
 
 Demo:
 --
-	These scripts are designed for attribution analysis and visualization of figures presented in the manuscript titled "Artificial light at night outweighs temperature in lengthening urban growing seasons." This Code folder provides codes of analysis for the example (New York) in ".m" type, and the data for the example is in Demo folder. 
+These scripts are designed for attribution analysis and visualization of figures presented in the manuscript titled "Artificial light at night outweighs temperature in lengthening urban growing seasons." This Code folder provides codes of analysis for the example (New York) in ".m" type, and the data for the example is in Demo folder. 
 	
 Instruction for use:
 --
 ·To download the data form Demo and code for Code.
+
 ·Include the data and code in one folder in your personal computer.
+
 ·The first step is read city list and tidy the raw data with ReadCityInfo.m and Tidy_pheno_ALAN_T.m.
 
