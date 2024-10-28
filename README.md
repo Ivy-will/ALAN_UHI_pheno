@@ -17,13 +17,16 @@ Mapping Toolbox
 Curve Fitting Toolbox
 
 Installation guide:
-	The details about Matlab installation and Toolbox management is accessible at：https://ww2.mathworks.cn/help/install/ug/install-products-with-internet-connection.html. 
+--
+The details about Matlab installation and Toolbox management is accessible at：https://ww2.mathworks.cn/help/install/ug/install-products-with-internet-connection.html. 
 
 Demo:
+--
 	These scripts are designed for attribution analysis and visualization of figures presented in the manuscript titled "Artificial light at night outweighs temperature in lengthening urban growing seasons." This Code folder provides codes of analysis for the example (New York) in ".m" type, and the data for the example is in Demo folder. 
+	
+Instruction for use:
+--
+·To download the data form Demo and code for Code.
+·Include the data and code in one folder in your personal computer.
+·The first step is read city list and tidy the raw data with ReadCityInfo.m and Tidy_pheno_ALAN_T.m.
 
-Raw data can be retrieved from Google Earth Engine, and the associated scripts for data processing are available on the open-source GitHub repository: https://code.earthengine.google.com/?accept_repo=users/lvvw66/ALAN_UHI_pheno. 
-
-These scripts are designed for attribution analysis and visualization of figures presented in the manuscript titled "Artificial light at night outweighs temperature in lengthening urban growing seasons." 
-
-The scripts are written in Matlab 2022a platform.
