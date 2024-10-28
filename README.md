@@ -6,7 +6,7 @@ The analysis includes two part derive from Google Earth Engine (GEE) and Matlab 
 
 # System requirements:
 ## Hardware requirements:
-A standard computer with enough RAM to support the in-memory operations is required for the installation and operations with Matlab platform.
+A standard computer with enough RAM to support the in-memory operations is required for the installation and operations with ```Matlab``` platform.
 ## Software requirements: 
 The Matlab 2022a install package is accessible on the website: https://www.mathworks.com/products/matlab.html.
 ### Toolbox including:
