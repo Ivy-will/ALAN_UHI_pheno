@@ -7,7 +7,7 @@ Overview:
 System requirements:
 --
 Hardware requirements:
--
+
  A standard computer with enough RAM to support the in-memory operations is required for the installation and operations with Matlab platform.
 Software requirements:
 The Matlab 2022a install package is accessible on the website: https://www.mathworks.com/products/matlab.html.
