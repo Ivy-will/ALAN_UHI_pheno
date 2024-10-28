@@ -11,8 +11,11 @@ A standard computer with enough RAM to support the in-memory operations is requi
 The Matlab 2022a install package is accessible on the website: https://www.mathworks.com/products/matlab.html.
 ### Toolbox including:
 ```Statistics and Machine Learning Toolbox```
+
 ```Mapping Toolbox```
+
 ```Curve Fitting Toolbox```
+
 
 # Installation guide:
 
