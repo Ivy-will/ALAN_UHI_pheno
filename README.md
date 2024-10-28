@@ -28,5 +28,5 @@ These scripts are designed for attribution analysis and visualization of figures
 
 * Include the data and code in one folder in your personal computer.
 
-* The first step is read city list and tidy the raw data with ReadCityInfo.m() and Tidy_pheno_ALAN_T.m().
+* The first step is read city list and tidy the raw data with [ReadCityInfo.m](https://github.com/Ivy-will/ALAN_UHI_pheno/blob/main/Code/ReadCityInfo.m) and [Tidy_pheno_ALAN_T.m](https://github.com/Ivy-will/ALAN_UHI_pheno/blob/main/Code/Tidy_pheno_ALAN_T.m).
 
