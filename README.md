@@ -6,12 +6,12 @@ The analysis includes two part derive from Google Earth Engine (GEE) and Matlab 
 
 System requirements:
 --
-Hardware requirements:
+#Hardware requirements:
 
  A standard computer with enough RAM to support the in-memory operations is required for the installation and operations with Matlab platform.
-Software requirements:
+#Software requirements:
 The Matlab 2022a install package is accessible on the website: https://www.mathworks.com/products/matlab.html.
-Toolbox including:
+##Toolbox including:
 Statistics and Machine Learning Toolbox
 Mapping Toolbox
 Curve Fitting Toolbox
@@ -26,9 +26,9 @@ These scripts are designed for attribution analysis and visualization of figures
 	
 Instruction for use:
 --
-·To download the data form Demo and code for Code.
+* To download the data form Demo and code for Code.
 
-·Include the data and code in one folder in your personal computer.
+* Include the data and code in one folder in your personal computer.
 
-·The first step is read city list and tidy the raw data with ReadCityInfo.m and Tidy_pheno_ALAN_T.m.
+* The first step is read city list and tidy the raw data with ReadCityInfo.m and Tidy_pheno_ALAN_T.m.
 
